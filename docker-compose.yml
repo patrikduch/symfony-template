@@ -9,6 +9,11 @@ services:
       - .:/var/www/symfony
     ports:
       - "9000:9000"
+      - "9004:9004"  # Port for Xdebug
+    environment:
+      - PHP_IDE_CONFIG=serverName=docker
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     networks:
       - symfony
 
