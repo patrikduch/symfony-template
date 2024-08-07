@@ -23,6 +23,11 @@ composer require doctrine/orm
 composer require symfony/maker-bundle --dev
 ```
 
+
+composer require lexik/jwt-authentication-bundle
+
+composer require symfony/validator
+
 ### Unit tests
 ```bash
 composer require --dev symfony/phpunit-bridge
@@ -52,6 +57,8 @@ php bin/console make:entity
 ```bash
 php bin/console make:migration
 ```
+
+
 
 
 php bin/console doctrine:migrations:migrate
