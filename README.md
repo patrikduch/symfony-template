@@ -2,12 +2,16 @@
 
 ## development
 
+### build all containers
+
 ```bash
 docker-compose up -d --build
 ```
 
+### enter to a docker php container
+```bash
 docker-compose exec php bash
-
+```
 
 ### Required dependencies
 
@@ -22,11 +26,13 @@ composer require doctrine/orm
 ```bash
 composer require symfony/maker-bundle --dev
 ```
-
-
+```bash
 composer require lexik/jwt-authentication-bundle
-
+```
+```bash
 composer require symfony/validator
+```
+
 
 ### Unit tests
 ```bash
@@ -39,18 +45,19 @@ composer require --dev symfony/phpunit-bridge
 ./bin/phpunit
 ```
 
-
 ### Composer
+
+```bash
 composer update
-
-
-
-### create an entity
-
-php bin/console make:entity
-
+```
 
 ### Migrations
+
+#### create an entity
+
+```bash
+php bin/console make:entity
+```
 
 #### Create a brand new migration
 
@@ -58,9 +65,10 @@ php bin/console make:entity
 php bin/console make:migration
 ```
 
+#### Apply migrations
 
-
-
+```bash
 php bin/console doctrine:migrations:migrate
+```
 
 
