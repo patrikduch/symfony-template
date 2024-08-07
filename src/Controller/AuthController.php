@@ -76,4 +76,11 @@ class AuthController extends AbstractController
 
         return new JsonResponse(['token' => $token]);
     }
+
+    #[Route('/api/protected', name: 'api_protected', methods: ['GET'])]
+    #[IsGranted('IS_AUTHENTICATED_FULLY')]
+    public function protectedEndpoint(): JsonResponse
+    {
+        return new JsonResponse(['message' => 'This is a protected endpoint!']);
+    }
 }
