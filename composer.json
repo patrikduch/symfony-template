@@ -65,8 +65,9 @@
         }
     },
     "require-dev": {
-        "doctrine/orm": "^2.10",
         "doctrine/doctrine-bundle": "^2.10",
-        "symfony/maker-bundle": "^1.50"
+        "doctrine/orm": "^2.10",
+        "symfony/maker-bundle": "^1.50",
+        "symfony/phpunit-bridge": "^7.1"
     }
 }

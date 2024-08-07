@@ -6,6 +6,10 @@
 docker-compose up -d --build
 ```
 
+docker-compose exec php bash
+
+
+
 ### Required dependencies
 
 ```bash
@@ -19,6 +23,10 @@ composer require doctrine/orm
 ```bash
 composer require symfony/maker-bundle --dev
 ```
+
+
+Unit tests
+composer require --dev symfony/phpunit-bridge
 
 
 ### Composer
