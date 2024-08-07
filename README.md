@@ -47,7 +47,13 @@ php bin/console make:entity
 
 ### Migrations
 
+#### Create a brand new migration
+
+```bash
 php bin/console make:migration
+```
+
+
 php bin/console doctrine:migrations:migrate
 
 
